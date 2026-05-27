@@ -347,14 +347,18 @@ Lógica de color adaptativa: El color de los cables láser y los bordes de los e
 Lógica de figuras adaptativa: Si en la pestaña IS-IS el usuario selecciona "Switches Multicapa", los círculos clásicos de los routers deben transformarse en cajas cuadradas con el icono trad
 ---
 
-👥 Integrantes
-Nombre	Rol
-Brayan Iván Ribón Quintero	Desarrollo Backend / Lógica de protocolos
-Edwar Roberto Martínez Pinto	Desarrollo Frontend / Diseño de interfaz
-Jeimy Lorena Niño Correa	Documentación técnica / Pruebas en Packet Tracer
-Universidad: Universidad Compensar — UCompensar  
-Materia: Enrutamiento IP Avanzado / Redes WAN  
-Fecha de entrega: 26 de mayo de 2026
+## 👥 Integrantes
+
+| Nombre | Rol |
+|--------|-----|
+| **Brayan Iván Ribón Quintero** | Desarrollo Backend / Lógica de protocolos |
+| **Edwar Roberto Martínez Pinto** | Desarrollo Frontend / Diseño de interfaz |
+| **Jeimy Lorena Niño Correa** | Documentación técnica / Pruebas en Packet Tracer |
+
+**Universidad:** Universidad Compensar — UCompensar  
+**Materia:** Enrutamiento IP Avanzado / Redes WAN  
+**Fecha de entrega:** 26 de mayo de 2026
+
 ---
 🤖 Uso de Inteligencia Artificial como Apoyo
 Durante el desarrollo de este proyecto se utilizaron herramientas de inteligencia artificial generativa como apoyo en la elaboración del código, la documentación y la estructura del repositorio. Los asistentes de IA utilizados fueron:
