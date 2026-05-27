@@ -1,7 +1,6 @@
 # HERRAMIENTADEAPOYO.NETUCOMPENSAR
 
-# TRABAJO-FINAL-DE-REDES-WAN
-# 🌐 APLICATIVO REDES WAN — UCompensar
+## 🌐 APLICATIVO REDES WAN — UCompensar
 
 > **Herramienta educativa de automatización y configuración de protocolos de enrutamiento WAN (OSPF, BGP, IS-IS) para estudiantes de Ingeniería de Sistemas y Telecomunicaciones.**
 
