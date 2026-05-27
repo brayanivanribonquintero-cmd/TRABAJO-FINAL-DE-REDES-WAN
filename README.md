@@ -1,4 +1,4 @@
-# Proyecto-Practico-Automatizacion-y-Troubleshooting-en-Redes-WAN
+# HERRAMIENTADEAPOYO.NETUCOMPENSAR
 
 # TRABAJO-FINAL-DE-REDES-WAN
 # 🌐 APLICATIVO REDES WAN — UCompensar
@@ -360,7 +360,7 @@ Lógica de figuras adaptativa: Si en la pestaña IS-IS el usuario selecciona "Sw
 **Fecha de entrega:** 26 de mayo de 2026
 
 ---
-🤖 Uso de Inteligencia Artificial como Apoyo
+## Uso de Inteligencia Artificial como Apoyo
 Durante el desarrollo de este proyecto se utilizaron herramientas de inteligencia artificial generativa como apoyo en la elaboración del código, la documentación y la estructura del repositorio. Los asistentes de IA utilizados fueron:
 Herramienta	Uso principal
 Google Gemini	Apoyo en la generación del prompt de arquitectura, sugerencias de diseño de interfaz y revisión de lógica de configuración de protocolos
