@@ -347,20 +347,28 @@ Lógica de color adaptativa: El color de los cables láser y los bordes de los e
 Lógica de figuras adaptativa: Si en la pestaña IS-IS el usuario selecciona "Switches Multicapa", los círculos clásicos de los routers deben transformarse en cajas cuadradas con el icono trad
 ---
 
-## 👥 Integrantes
-
-| Nombre | Rol |
-|--------|-----|
-| **Brayan Iván Ribón Quintero** | Desarrollo Backend / Lógica de protocolos |
-| **Edwar Roberto Martínez Pinto** | Desarrollo Frontend / Diseño de interfaz |
-| **Jeimy Lorena Niño Correa** | Documentación técnica / Pruebas en Packet Tracer |
-
-**Universidad:** Universidad Compensar — UCompensar  
-**Materia:** Enrutamiento IP Avanzado / Redes WAN  
-**Fecha de entrega:** 26 de mayo de 2026
-
+👥 Integrantes
+Nombre	Rol
+Brayan Iván Ribón Quintero	Desarrollo Backend / Lógica de protocolos
+Edwar Roberto Martínez Pinto	Desarrollo Frontend / Diseño de interfaz
+Jeimy Lorena Niño Correa	Documentación técnica / Pruebas en Packet Tracer
+Universidad: Universidad Compensar — UCompensar  
+Materia: Enrutamiento IP Avanzado / Redes WAN  
+Fecha de entrega: 26 de mayo de 2026
 ---
-
-## 📄 Licencia
-
+🤖 Uso de Inteligencia Artificial como Apoyo
+Durante el desarrollo de este proyecto se utilizaron herramientas de inteligencia artificial generativa como apoyo en la elaboración del código, la documentación y la estructura del repositorio. Los asistentes de IA utilizados fueron:
+Herramienta	Uso principal
+Google Gemini	Apoyo en la generación del prompt de arquitectura, sugerencias de diseño de interfaz y revisión de lógica de configuración de protocolos
+Claude (Anthropic)	Apoyo en la redacción de la documentación técnica, estructuración del README y generación del código base de la aplicación Streamlit
+> **Nota importante:** Todo el contenido técnico generado por las herramientas de IA fue revisado, validado y comprobado en la práctica por los integrantes del equipo. Las configuraciones de los protocolos OSPF, BGP e IS-IS fueron verificadas directamente en **Cisco Packet Tracer** usando equipos Router 2811, confirmando que los scripts generados por la aplicación producen resultados correctos y reproducibles en un entorno real de simulación.
+>
+> El uso de IA se enmarca en un modelo de **colaboración humano-máquina**: la IA actuó como asistente de productividad, pero la comprensión técnica, las decisiones de diseño, las pruebas y la validación final fueron responsabilidad exclusiva del equipo estudiantil.
+---
+📄 Licencia
+Este proyecto es de uso educativo y académico, desarrollado en el marco del programa de Ingeniería de Sistemas y Telecomunicaciones de la Universidad Compensar.
+---
+<div align="center">
+  <sub>Construido con ❤️ para los estudiantes de UCompensar · 2026</sub>
+</div>
 Este proyecto es de uso **educativo y académico**, desarrollado en el marco del programa de Ingeniería de Sistemas y Telecomunicaciones de la Universidad Compensar.
