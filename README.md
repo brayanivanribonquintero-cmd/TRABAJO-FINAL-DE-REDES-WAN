@@ -369,9 +369,7 @@ Claude (Anthropic)	Apoyo en la redacción de la documentación técnica, estruct
 > El uso de IA se enmarca en un modelo de **colaboración humano-máquina**: la IA actuó como asistente de productividad, pero la comprensión técnica, las decisiones de diseño, las pruebas y la validación final fueron responsabilidad exclusiva del equipo estudiantil.
 ---
 📄 Licencia
-Este proyecto es de uso educativo y académico, desarrollado en el marco del programa de Ingeniería de Sistemas y Telecomunicaciones de la Universidad Compensar.
+Este proyecto es de uso educativo y académico, desarrollado en el marco del programa de Ingeniería de Telecomunicaciones de la Universidad Compensar.
 ---
 <div align="center">
-  <sub>Construido con ❤️ para los estudiantes de UCompensar · 2026</sub>
 </div>
-Este proyecto es de uso **educativo y académico**, desarrollado en el marco del programa de Ingeniería de Sistemas y Telecomunicaciones de la Universidad Compensar.
