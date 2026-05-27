@@ -1,3 +1,5 @@
+# Proyecto-Practico-Automatizacion-y-Troubleshooting-en-Redes-WAN
+
 # TRABAJO-FINAL-DE-REDES-WAN
 # 🌐 APLICATIVO REDES WAN — UCompensar
 
@@ -22,6 +24,7 @@
 8. [Guía de Uso — Paso a Paso](#-guía-de-uso--paso-a-paso)
 9. [Prueba con OSPF en Cisco Packet Tracer](#-prueba-con-ospf-en-cisco-packet-tracer-router-2811)
 10. [Integrantes](#-integrantes)
+11. Prom
 
 ---
 
@@ -196,6 +199,8 @@ En el **panel lateral izquierdo**:
 3. Define el ID de VLAN (ej. `100`) y el nombre de la VLAN (ej. `VLAN_PRODUCCION`).
 4. Mueve el slider para definir cuántos equipos tendrá tu topología (1 a 10).
 
+<img width="207" height="537" alt="image" src="https://github.com/user-attachments/assets/8ce76b25-7d54-4fb2-8163-185481af1772" />
+
 > El sistema calculará automáticamente la dirección de red, la máscara tradicional y el wildcard.
 
 ### Paso 2 — Seleccionar el vendor
@@ -203,20 +208,45 @@ En el cuerpo principal, elige el sistema operativo del equipo:
 - **CISCO (IOS / IOS-XE)**
 - **HUAWEI (VRP)**
 
+<img width="517" height="217" alt="image" src="https://github.com/user-attachments/assets/37ec67db-1882-45c4-a4bf-2687d7b0e283" />
+
+Ejemplo si escogemos Cisco:
+
+<img width="510" height="301" alt="image" src="https://github.com/user-attachments/assets/051a1172-6ee6-4948-a112-fec6a5d518e1" />
+
+Ejemplo si escogemos Huawei:
+
+<img width="518" height="288" alt="image" src="https://github.com/user-attachments/assets/54bb7a95-bd00-440a-8889-71d122c848db" />
+
 El catálogo de modelos de hardware se actualizará dinámicamente.
 
 ### Paso 3 — Explorar los protocolos
 Haz clic en cada pestaña para ver la configuración del protocolo correspondiente:
 
 - **📡 OSPF** → Copia el script generado en la interfaz CLI de tu router Cisco o Huawei en Packet Tracer.
+
+<img width="512" height="153" alt="image" src="https://github.com/user-attachments/assets/5f679355-5821-4cca-be83-b2aa4ef7fa2a" />
+
 - **🌐 BGP** → Revisa la IP del vecino generada automáticamente y aplica la configuración.
+
+<img width="516" height="126" alt="image" src="https://github.com/user-attachments/assets/898af7ca-71a2-4871-9833-ede344ad65fe" />
+
 - **🌌 IS-IS** → Selecciona si los equipos son Routers de Núcleo o Switches Multicapa; el script y la topología se adaptan en tiempo real.
 
+<img width="514" height="190" alt="image" src="https://github.com/user-attachments/assets/4a7ba92c-c7b1-4977-bb8c-cd83d262db4f" />
+
+
 ### Paso 4 — Observar la topología SVG
+
+<img width="331" height="153" alt="image" src="https://github.com/user-attachments/assets/b5e480a4-d5a5-4780-b992-6dd18852c976" />
+
 Al desplazarte hacia abajo verás el mapa de topología física con:
 - Los nodos representando tus equipos configurados.
 - Animación de flujo de datos (fibra óptica láser).
 - Colores que indican el protocolo activo.
+
+<img width="515" height="112" alt="image" src="https://github.com/user-attachments/assets/080252f1-864e-4f19-be15-d4fcc5131abf" />
+
 
 ### Paso 5 — Aplicar en Packet Tracer
 Copia el script de la caja de terminal oscura y pégalo en la CLI del equipo configurado en tu simulación de Cisco Packet Tracer.
@@ -231,9 +261,8 @@ Como caso de prueba, se realizó la configuración del protocolo **OSPF** en un 
 
 | Parámetro | Valor |
 |-----------|-------|
-| Dirección IP Gateway | `172.16.10.1` |
+| Dirección IP Gateway | `10.10.120.1` |
 | Máscara CIDR | `/24` |
-| Dirección de Red | `172.16.10.0` |
 | Wildcard | `0.0.0.255` |
 | VLAN ID | `100` |
 | Nombre VLAN | `VLAN_PRODUCCION` |
@@ -242,24 +271,17 @@ Como caso de prueba, se realizó la configuración del protocolo **OSPF** en un 
 
 ### Script de configuración generado por la herramienta
 
-```ios
-! === CONFIGURACIÓN OSPF EN CISCO IOS ===
-! Modelo de Equipo: ISR 4331 (Router de Servicios Integrados Empresarial)
-vlan 100
- name VLAN_PRODUCCION
-!
-interface GigabitEthernet0/1
- description Enlace_Trunk_Hacia_LAN
- no shutdown
-!
-interface GigabitEthernet0/1.100
- description Subinterfaz Gateway VLAN VLAN_PRODUCCION
- encapsulation dot1Q 100
- ip address 172.16.10.1 255.255.255.0
-!
-router ospf 1
- router-id 1.1.1.1
- network 172.16.10.0 0.0.0.255 area 0
+<img width="514" height="323" alt="image" src="https://github.com/user-attachments/assets/c75ab6e8-5599-45a1-aa75-ce2ae1b0cfd0" />
+
+Configuración realizada en cisco packet tracer:
+
+<img width="384" height="130" alt="image" src="https://github.com/user-attachments/assets/22c2ea7c-e63b-482b-b7fb-1c650742000b" />
+
+<img width="519" height="238" alt="image" src="https://github.com/user-attachments/assets/df3cc1ec-3561-410f-9ed4-452acb9add8b" />
+
+<img width="519" height="238" alt="image" src="https://github.com/user-attachments/assets/09aa36d8-1b37-4324-a1c6-e2e91f3de446" />
+
+
 ```
 
 ### Comandos de verificación OSPF
@@ -291,6 +313,38 @@ Neighbor ID     Pri   State           Dead Time   Address         Interface
 
 > 📸 Las capturas de pantalla de la simulación en Packet Tracer se encuentran en el archivo `Explicacion_y_pantallazos.docx` adjunto al proyecto.
 
+# PROMPT
+Contexto del Proyecto: Actúa como un Ingeniero de DevOps y Telecomunicaciones experto en desarrollo de software con Python. Debes construir una aplicación web corporativa/académica utilizando Streamlit orientada a la simulación y generación dinámica de scripts de configuración de red para estudiantes de la UCompensar. El diseño visual de la interfaz debe ser moderno y limpio, utilizando estilos avanzados de CSS embebido con una estética de modo oscuro (Glassmorphism y tonos azulados/púrpuras).
+
+Requerimientos de Arquitectura de Red y Lógica de Datos:
+
+Cálculo de Direccionamiento Automático: Utiliza la librería integrada ipaddress de Python para que, a partir de una dirección IP de Gateway (por defecto 172.16.10.1) y una máscara en formato CIDR seleccionadas por el usuario, el sistema calcule matemáticamente la dirección de red base y su respectiva máscara tradicional en formato decimal, así como su wildcard.
+
+Parámetros Globales e Inputs Dinámicos: El panel lateral (st.sidebar) debe capturar las variables clave de la infraestructura: Dirección IP, Selector de Máscara CIDR (rango 24 a 30), ID de la VLAN (numérico), Nombre de la VLAN (texto) y un Deslizador (st.slider) interactivo para definir la cantidad de equipos en la topología física en un rango de 1 a 10 equipos.
+
+Catálogo de Referencias de Hardware: Añade un menú desplegable (st.selectbox) que ofrezca al usuario una lista de modelos y referencias reales del mercado de telecomunicaciones. Esta lista debe cambiar de manera dinámica dependiendo del Vendor tecnológico seleccionado por el usuario en la interfaz:
+
+Si el Vendor es CISCO: Mostrar modelos como ISR 4331, Catalyst 9300, ASR 1001-X, Nexus 9300.
+
+Si el Vendor es HUAWEI: Mostrar modelos como NetEngine AR6140, CloudEngine S5735-L, NetEngine 8000 M1A, CloudEngine S6730-H.
+
+Estructura de la Interfaz Central (Pestañas de Protocolos): El cuerpo principal de la página debe llevar el título institucional destacado: "CONFIGURACION DE PROTOCOLOS BGP,ISIS O OSPF UCOMPENSAR". Debe dividirse obligatoriamente en tres pestañas independientes (st.tabs) para los protocolos principales de enrutamiento:
+
+Pestaña OSPF (Link-State): Debe mostrar una tarjeta teórica explicativa del protocolo y una caja de terminal oscura con comandos reales de sintaxis IOS para Cisco o VRP para Huawei (dependiendo del radio button activo), inyectando dinámicamente las variables calculadas (VLAN, IP, Máscara, Wildcard, etc.).
+
+Pestaña BGP (Path-Vector): Debe simular la configuración de vecindades BGP calculando lógicamente una IP adyacente para el comando neighbor o peer.
+
+Pestaña IS-IS (ISO CLNS): Debe incluir una característica exclusiva: un selector de radio (st.radio) que permita elegir la naturaleza de los "Sistemas Intermedios", alternando entre Routers de Núcleo (Core) o Switches Multicapa (Capa 3).
+
+Requerimiento Gráfico Avanzado (Topología Dinámica en SVG): Al final de la página, embebe un componente HTML que renderice un mapa de topología física autogenerado en formato SVG que responda en tiempo real a las interacciones del usuario:
+
+Debe graficar exactamente la cantidad de nodos configurados en el slider (hasta 10).
+
+Los enlaces deben simular cables de fibra óptica con un haz láser animado que fluye continuamente a lo largo de la red (stroke-dashoffset).
+
+Lógica de color adaptativa: El color de los cables láser y los bordes de los equipos debe cambiar dinámicamente según la pestaña del protocolo que se esté visualizando: Celeste (#38bdf8) para OSPF, Amarillo/Ámbar (#fbbf24) para BGP y Púrpura (#a855f7) para IS-IS.
+
+Lógica de figuras adaptativa: Si en la pestaña IS-IS el usuario selecciona "Switches Multicapa", los círculos clásicos de los routers deben transformarse en cajas cuadradas con el icono trad
 ---
 
 ## 👥 Integrantes
@@ -310,5 +364,3 @@ Neighbor ID     Pri   State           Dead Time   Address         Interface
 ## 📄 Licencia
 
 Este proyecto es de uso **educativo y académico**, desarrollado en el marco del programa de Ingeniería de Sistemas y Telecomunicaciones de la Universidad Compensar.
-
----
